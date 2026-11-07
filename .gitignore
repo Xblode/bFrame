@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.claude/state/
+.playwright-mcp/
+*.bak
+.env
+.env.*
+.bframe/memory/
+.claude/settings.local.json
+.bframe/backup/
+.bframe/install.json
