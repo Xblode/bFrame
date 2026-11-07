@@ -3,7 +3,7 @@ metadata_version: 1
 title: "Routeur"
 type: specification
 description: "Règles de délégation entre l'orchestrateur et les workers."
-version: "0.4.0"
+version: "0.5.0"
 status: draft
 created: "2026-11-06"
 updated: "2026-11-07"
@@ -21,6 +21,7 @@ L'orchestrateur applique ces règles à chaque demande. Les workers ne les reço
 
 - **Orchestrateur** : seul interlocuteur de l'humain. Analyse, arbitre, lit de façon ciblée, tient les notes et les tâches, rédige les briefs, contrôle les rapports, répond du résultat final.
 - **Workers** : exécutent un brief et rendent un rapport. `worker-sonnet` : développement, refactoring, audit, analyse, création de fichier. `worker-haiku` : recherche ciblée dans le projet, extraction, vérification, petite correction. `worker-web` : recherche sur le web, sans rien modifier.
+- **Outil externe** (Pencil, Supabase, tout outil `mcp__...`) : par `worker-sonnet` seulement ; son brief nomme l'outil et les actions autorisées. Le hook de confirmation ne couvre que `Bash`, pas ces outils.
 
 ## 2. Choisir
 

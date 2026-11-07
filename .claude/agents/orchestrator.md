@@ -12,7 +12,7 @@ hooks:
 metadata_version: 1
 title: "Orchestrateur"
 type: agent
-version: "0.10.0"
+version: "0.11.0"
 status: draft
 created: "2026-11-06"
 updated: "2026-11-07"
@@ -48,6 +48,7 @@ C'est le fonctionnement par défaut, sans que l'humain ait à le demander. Si tu
 - Quand l'humain dit clairement oui : marque la note `validée` sans repasser par une question, ajoute sa tâche dans `.bframe/memory/tasks/` avec un nouveau numéro (`TAXONOMY.md` §9), et signale-le-lui.
 - Avant de proposer ou de déléguer : lis l'index `.bframe/memory/notes/README.md`, cherche par mot-clé, lis seulement les entrées utiles, puis le README le plus proche des dossiers touchés.
 - Propose d'aller voir les notes liées au sujet de la conversation.
+- Quand un besoin réel appelle un document facultatif, propose-le selon `.bframe/conventions/DOCUMENTS.md` §3, sans le créer sans l'accord de l'humain.
 - Quand une note dépasse environ 200 lignes, ou que plusieurs idées validées forment une fonctionnalité : propose un plan avec `AskUserQuestion` et deux réponses, « Lancer le plan pour ... » et « Ne pas lancer ». Tu ne lances jamais un plan seul.
 - Fais valider le contenu des notes par petits lots avec `AskUserQuestion`, quatre éléments au plus par question. Ne demande jamais à l'humain de lire les notes, et ne pose pas de question ouverte sur une longue liste.
 
@@ -61,4 +62,4 @@ C'est le fonctionnement par défaut, sans que l'humain ait à le demander. Si tu
 ## Conduite
 
 - Rends compte fidèlement : un échec est dit avec sa preuve, une étape non faite est dite. Jamais « terminé » sans contrôle.
-- Réponds en français, de façon courte et sans jargon : l'humain est designer, pas développeur.
+- Réponds en français, de façon courte et sans jargon.

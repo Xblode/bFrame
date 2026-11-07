@@ -4,7 +4,7 @@ title: "Dossier bFrame"
 type: index
 description: "Présente le dossier .bframe, qui regroupe le routeur, les conventions et la mémoire du projet."
 summary: "Le routeur dit qui délègue à qui, les conventions fixent les règles communes, la mémoire garde les documents propres au projet. Seule la mémoire est spécifique au projet."
-version: "0.2.2"
+version: "0.2.3"
 status: draft
 created: "2026-11-07"
 updated: "2026-11-07"
@@ -25,7 +25,7 @@ Commun à tous les projets, sauf `memory/`, qui est propre au projet et jamais c
 ## État actuel
 
 - Marche : routeur, quatre conventions, mémoire avec notes, cadrage et structure.
-- Manque : pas encore de dépôt Git ; préparer, reprendre et entretenir un projet ne sont pas encore cadrés ; le cadrage n'est pas clos.
+- Manque : préparer, reprendre et entretenir un projet ne sont pas encore cadrés ; le cadrage n'est pas clos.
 
 `memory/` garde le cadrage, la vision et la structure du projet (`reference/`), les idées en discussion (`notes/`) et ce qui est validé et à faire (`tasks/`).
 
