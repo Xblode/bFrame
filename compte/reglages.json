@@ -1,0 +1,7 @@
+{
+  "agent": "orchestrator",
+  "permissions": {
+    "deny": ["Read(**/.env)", "Read(**/.env.*)"],
+    "ask": ["Bash(git push *)", "PowerShell(git push *)"]
+  }
+}
